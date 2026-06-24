@@ -1,4 +1,4 @@
-/* Normalize CSS file. */
+/* Add a universal box sizing rule. */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15;-webkit-text-size-adjust:100%}
 body{margin:0}
@@ -51,7 +51,7 @@ template{display:none}[hidden]{display:none}
     --section-title-color: var(--color-black);
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
