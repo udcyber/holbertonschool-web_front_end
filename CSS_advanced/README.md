@@ -687,46 +687,154 @@ File: styles/28-style.css
 
 --------------------------------------------------------------------
 
+## 29. Styling and custom properties for the nav
+
+Based on styles/28-style.css
+
+Edit the nav-item-link-hover property by setting its value to the color-whitevariable
+
+Target the before pseudo elements of nav-link that is inside the nav
+
+- Set the values of these elements to empty using content
+- Absolutely position the targeted elements
+- Set the vertical position to 0
+- The horizontal position of the targeted elements should be 0
+- Set the color of the background color of the targeted elements to the value color-white
+- The width of the targeted elements should be set to 0
+- Set the height to 20% of the root element value
+Target the before pseudo elements of nav-link when nav-item is hover and is inside nav
+
+- Set the background color of the elements to the variable color-primary
+- Set the width of the elements to 100%
+
+Does not have to pass w3c
+
+Repo:
+
+GitHub repository: holbertonschool-web_front_end  
+Directory: CSS_advanced  
+File: styles/29-style.css  
 
 --------------------------------------------------------------------
 
+## 30. Fix the works section
+
+Based on styles/29-style.css
+
+Target card-outer within the card-work
+
+- Relatively position the element
+- Hide any overflow
+Target the image inside card-image inside card-work
+
+- The height of these elements should be 30rem
+- The width of this element should be 100%
+- Property: object-fit, Value: cover
+- Vertically align to the bottom
+Target card-inner inside card-work
+
+- Absolutely position the element
+- Vertically position with -0.1rem on the top
+- Horizontally position the element with -0.1rem on the left
+- Horizontally position the element with -0.1rem on the right
+- Set the z-index to 1
+Target card-inner when card-work is hover
+
+- Set the background color to this value: rgba(0, 0, 0, 0.7)
+Target card-title inside card-work
+
+- Center align the text
+- Margins all around should be 0
+- Opacity should be set to its lowest value
+- The height of the selected elements should be 100%
+- The position should be relative
+Target the link inside card-title and card-work
+
+- Make sure elements display as blocks
+- Text should not be decorated
+- Padding on the top should be 45%
+Create the after pseudo elements of the link (inside card-title and card-work)
+
+- Absolutely position the selected elements
+- Set the top, right, left, and bottom positions to be 0
+- The content property of these elements should have an empty value
+Target card-title when card-work is hover
+
+- The opacity of these elements should be set to the value of 1
+
+Does not have to pass w3c
+
+Repo:
+
+GitHub repository: holbertonschool-web_front_end  
+Directory: CSS_advanced  
+File: styles/30-style.css  
 
 --------------------------------------------------------------------
 
+## 31. Add quotes decoration on testimonials
+
+Target the card-quote that is inside the card-testimonial
+
+- Style it so that the position is relative to its parent
+Target the before pseudo-element of card-quote that is inside the card-testimonial
+
+- he content should be set to the value \201C
+- Absolutely position the selected elements
+- The vertical position of the selected elements should be -4.5rem
+- The horizontal position from the left should be -1rem
+- The foreground color of the selected elements should be set to #efeded
+- The size of fonts should be 10rem
+- The z-index should be set to -1
+
+Does not have to pass w3c
+
+Repo:
+
+GitHub repository: holbertonschool-web_front_end  
+Directory: CSS_advanced  
+File: styles/31-style.css  
 
 --------------------------------------------------------------------
 
+## 32. Incorporating transitions
 
---------------------------------------------------------------------
+Create some custom properties
 
+- Name: transition-duration, Value: .3s
+- Name: transition-cubic-bezier, Value: cubic-bezier(0.17, 0.67, 0, 1.01)
+Add transformations on the card work
 
---------------------------------------------------------------------
+Target the card-image when card-work is hover
 
+- Use the transform property to apply a scale transform with a value of scale(1.2)
+Target the card-outer when card-work is hover
 
---------------------------------------------------------------------
+- Use the transform property to apply a scale transform to make the elements shrink. Use scale(0.95)
+Add animations on the navigation items
 
+Inside .nav .nav-link::before
 
---------------------------------------------------------------------
+- Use the shorthand property transition and have it use the value of var(--transition-duration) var(--transition-cubic-bezier)
+Animate the button background
 
+In the hover state of the button class
 
---------------------------------------------------------------------
+- The duration of the transition should be set to the variable transition-duration
+- The transition effect should be applied to the color and background-color properties (transition-property)
+Add transitions on the card works
 
+Inside card-work:hover .card-image
 
---------------------------------------------------------------------
+- Use the shorthand property transition and have it use the value of var(--transition-duration) var(--transition-cubic-bezier)
+Inside .card-work .card-inner
 
+- Use the shorthand property transition and have it use the value of var(--transition-duration) var(--transition-cubic-bezier)
 
---------------------------------------------------------------------
+Does not have to pass w3c
 
+Repo:
 
---------------------------------------------------------------------
-
-
---------------------------------------------------------------------
-
-
---------------------------------------------------------------------
-
-
---------------------------------------------------------------------
-
-
+GitHub repository: holbertonschool-web_front_end  
+Directory: CSS_advanced  
+File: styles/32-style.css  
