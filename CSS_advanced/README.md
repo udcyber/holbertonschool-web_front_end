@@ -616,19 +616,74 @@ Target the ```<cite>``` HTML tag which is inside card-quote inside the card-test
 - Style as a block level element
 - Pad the top with 1x the root element
 - Set the foreground color value to the value of the color-primary variable
+
 Does not have to pass w3c
 
 Repo:
 
-GitHub repository: holbertonschool-web_front_end
-Directory: CSS_advanced
-File: styles/26-style.css
+GitHub repository: holbertonschool-web_front_end  
+Directory: CSS_advanced  
+File: styles/26-style.css  
 
 --------------------------------------------------------------------
 
+## 27. Styling the section hero
+
+Based on styles/26-style.css
+
+Add the section-hero selector
+
+- Set the size of the background using 2-value syntax
+- Width should be 90rem and the height should be set automatic
+Target the section-title inside the section-hero
+
+- Add 5rem of margin to the bottom
+Target the section-inner inside the section-hero
+
+- Add 10rem, 40rem, 2rem, and 0 to the padding on the top, right, bottom, left all in 1 rule
+
+Does not have to pass w3c
+
+Repo:
+
+GitHub repository: holbertonschool-web_front_end  
+Directory: CSS_advanced  
+File: styles/27-style.css  
 
 --------------------------------------------------------------------
 
+## 28. Fixing the header and menu navigation bar
+
+Based on styles/27-style.css
+
+Create these custom properties
+
+- Name: header-padding, Value: 4rem 0 0
+- Name: header-logo-position, Value: relative
+- Name: header-logo-link-display, Value: inline-block
+- Name: header-logo-link-position, Value: absolute
+- Name: header-logo-link-top, Value: -1rem
+- Name: header-logo-link-left, Value: 0
+Create a header class selector
+
+- Pad the header with the value within the variable header-padding
+Create a header-logo class selector
+
+- Position the header-logo with the value of the variable header-logo-position
+Target the link inside the header-logo class
+
+- Render the display using the value of the variable header-logo-link-display
+- Position the links with the value of the variable header-logo-link-position
+- Set the vertical position of the element using header-logo-link-top
+- Set the horizontal position of the element using header-logo-link-left
+
+Does not have to pass w3c
+
+Repo:
+
+GitHub repository: holbertonschool-web_front_end  
+Directory: CSS_advanced  
+File: styles/28-style.css  
 
 --------------------------------------------------------------------
 
